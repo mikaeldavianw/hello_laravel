@@ -38,7 +38,15 @@ Route::post('products/edit/{product_id}', "ProductController@edit");
 
 Route::post('products/delete', "ProductController@delete");
 
-Route::post('/media', "MediaController@index");
+Route::get('/media', "MediaController@index");
+
+Route::get('/media/upload', "MediaController@upload");
+Route::post('/media/upload', "MediaController@upload");
+
+
+
+
+
 
 //
 // Route::get('/about', function () {

@@ -14,12 +14,14 @@
                 <tr>
                     <th>Filename</th>
                     <th>Type</th>
+                    <th>Download</th>
                 </tr>
 
                 @foreach($contents as $file)
                 <tr>
                     <td>{{ $file['basename'] }}</td>
                     <td>{{ $file['type'] }}</td>
+                    <td><a href="/storage/{{ $file['basename'] }}">{{ $file['basename'] }}</a></td>
                 </tr>
                 @endforeach
 
